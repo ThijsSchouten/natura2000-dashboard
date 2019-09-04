@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <title>Natura 2000 Provincie Zuid-Holland CONCEPT</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles/normalize.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.10/esri/css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/jquery.dataTables.min.css" />
+
+    <script type="text/javascript" src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.dataTables.min.js"></script>
+
+    <script src="https://js.arcgis.com/4.12/"></script>
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <div class="gridcontainer">
+        
+      <header class="griditem header">
+            <img class='header__logoicon' src="logo/logo.svg" alt="Provincie Zuid-Holland">
+            <span class="short-text"><div class='header__title'>N2K DB</div></span>
+            <span class="full-text"><div class='header__title'>N2K DB</div></span>
+            <img src="logo/info.svg" class="header__infoicon" alt="Meer info">
+
+      </header>
+      
+        <div class="dropdown">
+            <select class="dropdown-content" id='n2k-dd'>
+                <option value="" selected disabled hidden>Selecteer gebied</option>
+            </select>
+        </div>
+        <!--          <div class="griditem subheader"></div>-->
+
+        <div class="griditem topcontent">
+            <h2>Nieuwkoopse Plassen</h2>
+            <div class="topcontent__status">Inspraak periode is afgelopen</div>
+            <h3>Actueel</h3>
+            <p>
+                Basis gegevens zijn te vinden op de site van het ministerie van Landbouw Natuur en Voedselkwaliteit. Zie onderstaande link.
+            </p>
+            <p>
+                <a href='https://www.synbiosys.alterra.nl/natura2000/gebiedendatabase.aspx?subj=n2k&groep=9&id=n2k103' class='external-link'>Basisgegevens LNV </a>
+            </p>
+            <h3>Aanwijzingsbesluit</h3>
+            <p>
+                <a href='https://www.synbiosys.alterra.nl/natura2000/documenten/gebieden/103/N2K103_DB%20HVN%20Nieuwkoopse%20Plassen%20&%20De%20Haeck.pdf' class='doc-link'> Besluit natura-2000 gebied Nieuwkoopse Plassen en De Heack [06-01-2014]</a>
+                <br>
+                <a href='https://www.synbiosys.alterra.nl/natura2000/documenten/gebieden/103/N2K103_OWB_Wijzigingsbesluit_aanwezige_waarden_Nieuwkoopse_Plassen_en_De_Haeck.pdf' class='doc-link'> Ontwerp wijziginsbesluit aanwezige waarden Nieuwkoopse Plassen en De Heack</a>
+            </p>
+
+            <h3>Beheerplan</h3>
+            <p>
+                <a href='https://geo.zuid-holland.nl/Data/Natura_2000/Natura2000_Beheerplannen/beheerplan2015-2021natura2000-gebiednieuwkoopseplassenendehaeck.pdf' class='doc-link'>Vigerende Beheerplan</a>
+                <br>
+                <a href='https://geo.zuid-holland.nl/Data/Natura_2000/Natura2000_Beheerplannen/beheerplan2015-2021natura2000-gebiednieuwkoopseplassenendehaeck-bijlagenvoorbereidendonderzoekbe.pdf' class='doc-link'>Bijlage beheerplan</a>
+                <br>
+                <a href='https://geo.zuid-holland.nl/Data/Natura_2000/Natura2000_Beheerplannen/notavanbeantwoordingenwijzigingbeheerplan2015-2021natura2000-gebiednieuwkoopseplassenendehaeck.pdf' class='doc-link'>Nota van Antwoord</a>
+            </p>
+        </div>
+
+        <div class="griditem mapdiv" id="mapcontainer1">
+            <h3>Habitattypekaart</h3>
+            <map id="htkaart" name='htkaart'></map>
+        </div>
+        <div class="griditem mapdiv" id="mapcontainer2">
+            <h3>Soortenkaart</h3>
+            <map id="lgkaart_nox" name='lgkaart_nox'></map>
+        </div>
+        <div class="griditem mapdiv" id="mapcontainer3">
+            <h3>Leefgebieden</h3>
+            <map id="lgkaart_all" name='lgkaart_all'></map>
+        </div>
+
+        <div class="griditem n2k_table">
+            <h3>Data tabel</h3>
+            <table id="n2k_table_placeholder">
+                <thead>
+                    <tr>
+                        <th>Habitattype</th>
+                        <th>Richtlijn</th>
+                        <th>AWB</th>
+                        <th>VB</th>
+                        <th>NOx</th>
+                        <th>KDW</th>
+                        <th>Doelstelling</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="griditem aftermapcontent">
+            <h3>Vergunningen</h3>
+            <p>[doclink] Onderzoek naar ..</p>
+            <h3>Overig onderzoek / Links</h3>
+            <p>[doclink] Onderzoek naar ..</p>
+
+        </div>
+        <footer class="griditem">Footer</footer>
+    </div>
+</body>
+
+</html>

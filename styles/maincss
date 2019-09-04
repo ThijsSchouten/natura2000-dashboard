@@ -1,0 +1,129 @@
+@media only screen and (min-width: 0px) {
+  .gridcontainer {
+    display: grid;
+    margin: 0 auto;
+    gap: 0.4em;
+    grid-template-columns: 0.005fr 2fr 2fr 2fr 0.005fr;
+    grid-template-areas: ". hdr hdr hdr. " ". dd dd dd. " ". shdr shdr shdr ." ". tcon tcon tcon . " ". map1 map1 map1 . " ". map2 map2 map2 ." ". map3 map3 map3 ." ". n2kt n2kt n2kt ." ". ftr ftr ftr . ";
+  }
+  .gridcontainer .griditem {
+    min-height: 3em;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .gridcontainer {
+    display: grid;
+    margin: 0 auto;
+    gap: 0.4em;
+    grid-template-columns: 0.3fr 2fr 2fr 2fr 0.3fr;
+    grid-template-areas: ". hdr hdr dd . " ". shdr shdr shdr . " ". tcon tcon tcon . " ". map1 map2 map3 . " ". n2kt n2kt n2kt . " ". ftr ftr ftr .";
+  }
+  .gridcontainer .griditem {
+    min-height: 3em;
+  }
+}
+html {
+  color: #006;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-size: 1em;
+}
+
+h3 {
+  font-family: "Source Sans Pro";
+  text-transform: uppercase;
+  font-size: 0.7862em;
+  font-weight: 500;
+}
+
+body {
+  font-family: "PT Sans";
+}
+
+.header {
+  grid-area: hdr;
+  vertical-align: middle;
+}
+.header h1 {
+  display: inline-block;
+  padding: 0.2em 1.5em;
+}
+.header img {
+  vertical-align: middle;
+  display: inline-block;
+  padding: 0.2em;
+  padding-right: 2em;
+  border-right: 1px solid lightgrey;
+}
+
+.subheader {
+  grid-area: shdr;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #033b9a;
+}
+
+.topcontent {
+  grid-area: tcon;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.mapdiv h1 {
+  font-size: 1em;
+}
+
+map {
+  height: 500px;
+}
+
+#mapcontainer1 {
+  grid-area: map1;
+}
+
+#mapcontainer2 {
+  grid-area: map2;
+}
+
+#mapcontainer3 {
+  grid-area: map3;
+}
+
+.dropdown {
+  grid-area: dd;
+  align-items: center;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+.dropdown #n2k-dd {
+  display: border-box;
+  width: 13em;
+  padding: 0.2em;
+  border-radius: 8px;
+}
+
+.n2k_table {
+  grid-area: n2kt;
+}
+.n2k_table thead {
+  font-family: "Source Sans Pro";
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 600;
+}
+.n2k_table tr {
+  font-family: "Source Sans Pro";
+  font-weight: 200;
+  font-size: 0.7em;
+  text-align: left;
+}
+
+footer {
+  grid-area: ftr;
+}
+
+/*# sourceMappingURL=maincss.map */
