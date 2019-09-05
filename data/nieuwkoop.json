@@ -1,332 +1,107 @@
-[
- {
-   "Habitattypen": "H3140 Kranswierwateren",
-   "Richtlijn": "Habitattypen",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Hz: zeer gevoelig",
-   "KWD": 571,
-   "Doelstelling": "Uitbreiding oppervlakte en verbetering kwaliteit.",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "H3140 Kranswierwateren",
-   "Richtlijn": "Habitattypen",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Lv: gevoelig",
-   "KWD": 2143,
-   "Doelstelling": "Uitbreiding oppervlakte en verbetering kwaliteit.",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "H3140 Kranswierwateren",
-   "Richtlijn": "Habitattypen",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Az: minder/niet gevoelig",
-   "KWD": 2400,
-   "Doelstelling": "Uitbreiding oppervlakte en verbetering kwaliteit.",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "H3140 Kranswierwateren",
-   "Richtlijn": "Habitattypen",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Baz: gevoelig",
-   "KWD": 2143,
-   "Doelstelling": "Uitbreiding oppervlakte en verbetering kwaliteit.",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "H3150 Meren met krabbenscheer en fonteinkruiden",
-   "Richtlijn": "Habitattypen",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Baz: gevoelig",
-   "KWD": 2143,
-   "Doelstelling": "Uitbreiding oppervlakte en verbetering kwaliteit.",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "H3150 Meren met krabbenscheer en fonteinkruiden",
-   "Richtlijn": "Habitattypen",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Az: minder/niet gevoelig",
-   "KWD": 2400,
-   "Doelstelling": "",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "H4010 Vochtige heiden",
-   "Richtlijn": "Habitattypen",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "B: zeer gevoelig",
-   "KWD": 786,
-   "Doelstelling": "Uitbreiding oppervlakte en verbetering kwaliteit vochtige heiden, laagveengebied (subtype B).",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "H6410 Blauwgraslanden",
-   "Richtlijn": "Habitattypen",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "zeer gevoelig",
-   "KWD": 1071,
-   "Doelstelling": "Uitbreiding oppervlakte en verbetering kwaliteit.",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "H6430 Ruigten en zomen",
-   "Richtlijn": "Habitattypen",
-   "Aanwijzingsbesluit": "A: X",
-   "Veegbesluit": "B: X",
-   "Stikstofgevoelig": "A: minder/niet gevoelig",
-   "KWD": 2400,
-   "Doelstelling": "Aanwijzingsbesluit: Behoud oppervlakte en kwaliteit ruigten en zomen, moerasspirea (subtype A).",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "H6430 Ruigten en zomen",
-   "Richtlijn": "Habitattypen",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "B: minder/niet gevoelig",
-   "KWD": 2400,
-   "Doelstelling": "Veegbesluit: Behoud oppervlakte en kwaliteit ruigten en zomen, moerasspirea (subtype A) en ruigten en zomen, harig wilgenroosje (subtype B).",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "H7140 Overgangs- en trilvenen",
-   "Richtlijn": "Habitattypen",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "A: zeer gevoelig",
-   "KWD": 1214,
-   "Doelstelling": "Uitbreiding oppervlakte en verbetering kwaliteit.",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "H7140 Overgangs- en trilvenen",
-   "Richtlijn": "Habitattypen",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "B: zeer gevoelig",
-   "KWD": 714,
-   "Doelstelling": "",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "H7210 *Galigaanmoerassen",
-   "Richtlijn": "Habitattypen",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "gevoelig",
-   "KWD": 1571,
-   "Doelstelling": "Behoud oppervlakte en kwaliteit.",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "H91D0 *Hoogveenbossen",
-   "Richtlijn": "Habitattypen",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "gevoelig",
-   "KWD": 1786,
-   "Doelstelling": "Behoud oppervlakte en kwaliteit.",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "H1016 Zeggekorfslak",
-   "Richtlijn": "Habitatrichtlijnsoorten",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Ja",
-   "KWD": -9999,
-   "Doelstelling": "Behoud omvang en kwaliteit leefgebied voor behoud populatie.",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "H1082 Gestreepte waterroofkever",
-   "Richtlijn": "Habitatrichtlijnsoorten",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Nee",
-   "KWD": null,
-   "Doelstelling": "Uitbreiding omvang en verbetering kwaliteit leefgebied voor uitbreiding populatie.",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "H1134 Bittervoorn",
-   "Richtlijn": "Habitatrichtlijnsoorten",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Ja",
-   "KWD": -9999,
-   "Doelstelling": "Behoud omvang en kwaliteit leefgebied voor behoud populatie.",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "H1149 Kleine modderkruiper",
-   "Richtlijn": "Habitatrichtlijnsoorten",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Nee",
-   "KWD": null,
-   "Doelstelling": "Behoud omvang en kwaliteit leefgebied voor behoud populatie.",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "H1163 Rivierdonderpad",
-   "Richtlijn": "Habitatrichtlijnsoorten",
-   "Aanwijzingsbesluit": "",
-   "Veegbesluit": "Ja",
-   "Stikstofgevoelig": "Nee",
-   "KWD": null,
-   "Doelstelling": "Behoud omvang en kwaliteit leefgebied voor behoud populatie.",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "H1318 Meervleermuis",
-   "Richtlijn": "Habitatrichtlijnsoorten",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Nee",
-   "KWD": null,
-   "Doelstelling": "Behoud omvang en kwaliteit leefgebied voor behoud populatie.",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "H1340 *Noordse woelmuis",
-   "Richtlijn": "Habitatrichtlijnsoorten",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Nee",
-   "KWD": null,
-   "Doelstelling": "Behoud omvang en kwaliteit leefgebied voor behoud populatie.",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "H1903 Groenknolorchis",
-   "Richtlijn": "Habitatrichtlijnsoorten",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Nee",
-   "KWD": null,
-   "Doelstelling": "Behoud omvang en kwaliteit biotoop voor behoud populatie.",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "H4056 Platte schijfhoren",
-   "Richtlijn": "Habitatrichtlijnsoorten",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Ja",
-   "KWD": -9999,
-   "Doelstelling": "Behoud omvang en kwaliteit leefgebied voor behoud populatie.",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "A021 Roerdomp",
-   "Richtlijn": "Vogelrichtlijnsoorten: broedvogels",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Nee",
-   "KWD": null,
-   "Doelstelling": "Uitbreiding omvang en/of verbetering kwaliteit leefgebied met een draagkracht voor een populatie van ten minste 6 paren (territoria).",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "A029 Purperreiger",
-   "Richtlijn": "Vogelrichtlijnsoorten: broedvogels",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Nee",
-   "KWD": null,
-   "Doelstelling": "Behoud omvang en kwaliteit leefgebied met een draagkracht voor een populatie van ten minste 120 paren.",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "A176 Zwartkopmeeuw",
-   "Richtlijn": "Vogelrichtlijnsoorten: broedvogels",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Nee",
-   "KWD": null,
-   "Doelstelling": "Behoud omvang en kwaliteit leefgebied met een draagkracht voor een populatie van ten minste 9 paren.",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "A197 Zwarte stern",
-   "Richtlijn": "Vogelrichtlijnsoorten: broedvogels",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Nee",
-   "KWD": null,
-   "Doelstelling": "Uitbreiding omvang en/of verbetering kwaliteit leefgebied met een draagkracht voor een populatie van ten minste 115 paren.",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "A292 Snor",
-   "Richtlijn": "Vogelrichtlijnsoorten: broedvogels",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Nee",
-   "KWD": null,
-   "Doelstelling": "Behoud omvang en kwaliteit leefgebied met een draagkracht voor een populatie van ten minste 25 paren",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "A295 Rietzanger",
-   "Richtlijn": "Vogelrichtlijnsoorten: broedvogels",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Nee",
-   "KWD": null,
-   "Doelstelling": "Behoud omvang en kwaliteit leefgebied met een draagkracht voor een populatie van ten minste 680 paren",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "A027 Grote zilverreiger",
-   "Richtlijn": "Vogelrichtlijnsoorten: niet-broedvogels",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Nee",
-   "KWD": null,
-   "Doelstelling": "Behoud omvang en kwaliteit leefgebied met een draagkracht voor een populatie van gemiddeld 60 vogels (seizoensmaximum).",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "A041 Kolgans",
-   "Richtlijn": "Vogelrichtlijnsoorten: niet-broedvogels",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Nee",
-   "KWD": null,
-   "Doelstelling": "Behoud omvang en kwaliteit leefgebied met een draagkracht voor een populatie van gemiddeld 3.000 vogels (seizoensmaximum).",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "A050 Smient",
-   "Richtlijn": "Vogelrichtlijnsoorten: niet-broedvogels",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Nee",
-   "KWD": null,
-   "Doelstelling": "Behoud omvang en kwaliteit leefgebied met een draagkracht voor een populatie van gemiddeld 3.500 vogels (seizoensmaximum).",
-   "Opmerkingen": ""
- },
- {
-   "Habitattypen": "A051 Krakeend",
-   "Richtlijn": "Vogelrichtlijnsoorten: niet-broedvogels",
-   "Aanwijzingsbesluit": "Ja",
-   "Veegbesluit": "Nee",
-   "Stikstofgevoelig": "Nee",
-   "KWD": null,
-   "Doelstelling": "Behoud omvang en kwaliteit leefgebied met een draagkracht voor een populatie van gemiddeld 90 vogels (seizoensmaximum).",
-   "Opmerkingen": ""
- }
-]
+let natura2000 = {"Nieuwkoopse Plassen & De Haeck": 
+  {
+  "_id":                          103,
+  "name":                         "Nieuwkoopse Plassen & De Haeck",
+  "bijgewerkt":                   "2019-09-05",
+  "status":                       "Inspraak periode is afgelopen",
+  "actueel":                      "Hier komt een tekst waarin staat wat actueel is.",
+  "ministerie":                   "https://www.synbiosys.alterra.nl/natura2000/gebiedendatabase.aspx?subj=n2k&groep=9&id=n2k103",
+  "beheerplan":                   [
+                                    {
+                                    "titel": "Beheerplan T0",
+                                    "url": "www",
+                                    "datum": "datum",
+                                    "bron": "Provincie Zuid-Holland",
+                                    "status": "vigerend",
+                                    "toelichting": "Toelichting",
+                                    "evaluatie": {"titel": "Evaluatie beheerplan T0",
+                                                  "url": "pad/naar/bestand"}
+                                    }
+                                  ],                        
+  "maatregelen":                  [
+                                    {"titel": "name",
+                                     "url": "www",
+                                     "service_url": "..",
+                                     "datum": "datum",
+                                     "status": "status",
+                                     "toelichting": "Toelichting"}
+                                  ],                                
+  "habitatkaart":                 [
+                                    {"titel": "T0",
+                                     "url": "url/naar/bron",
+                                     "service_url": "url/naar/service",
+                                     "bestand": "N2K_HK_103_Nieuwkoop_en_de_haeck_v20130624",
+                                     "bestand_toelichting": "130526_Toelichting_Habitatkaart_103_Nieuwkoopse_plassen__De_Haeck_v_1-4b.docx",
+                                     "datum": "2013-06-24",
+                                     "bron": "",
+                                     "status": "",
+                                     "toelichting": "Toelichting",
+                                     "unieke typen": ["H0000", "H6410", "H7140A", "H3150baz", "H4010B", "H91D0", "H7140B", "H3140lv", "H6430A", "H7210", "H6430B"],
+                                     "id": "103_HT_T0"}
+                                  ],
+  "leefgebieden":                 [
+                                    {"titel": "--",
+                                     "service_url": "--",
+                                     "url": "--",
+                                     "bestand": "",
+                                     "bestand_toelichting": "",
+                                     "datum": "--",
+                                     "bron": "",
+                                     "status": "",
+                                     "toelichting": "-",
+                                     "unieke typen": ["--", "--"],
+                                     "id": "103_LG_T0"}
+                                  ],
+  "leefgebied":                 [
+                                    {"titel": "T0: (N) Relevant Leefgebied",
+                                     "service_url": "url/naar/service",
+                                     "url": "url/naar/bron",
+                                     "bestand": "N2K_LG_103_Nieuwkoopse_plassen_en_de_Haeck_20171003",
+                                     "bestand_toelichting": "",
+                                     "datum": "2017-10-03",
+                                     "bron": "",
+                                     "status": "",
+                                     "toelichting": "Toelichting",
+                                     "unieke typen": ["LGX", "LGY"],
+                                     "id": "103_LG_T0"}
+                                  ],
+  "vogelrichtlijn":    {"aanwijzing_datum": "1997-02-14", "url": "www"},
+  "habitatrichtlijn":  {"aanwijzing_datum": "7 feb 2004", "url": "www", "plaatsing_datum": "2004-02-07"},
+  
+  "aanwijzingsbesluit":           [
+                                    {"titel": "name",
+                                     "url": "www",
+                                     "datum": "datum",
+                                     "bron": "",
+                                     "status": "status",
+                                     "toelichting": "Toelichting"}
+                                  ],
+  "wijzigingsbesluit":            [
+                                    {"titel": "name",
+                                     "url": "www",
+                                     "datum": "datum",
+                                     "bron": "",
+                                     "status": "status",
+                                     "toelichting": "Toelichting"}
+                                  ],
+  "vergunningen":                 [
+                                    {"titel": "name",
+                                     "url": "www",
+                                     "datum": "datum",
+                                     "bron": "",
+                                     "status": "status",
+                                     "toelichting": "Toelichting"}
+                                  ],
+  "overig onderzoek":             [
+                                    {"titel": "name",
+                                     "url": "www",
+                                     "datum": "datum",
+                                     "bron": "",
+                                     "status": "status",
+                                     "toelichting": "Toelichting",
+                                     "opdrachtgever": "Opdrachtgever"}
+                                  ],
+  "contact":                      {"naam": "naam",
+                                   "contact": "mailadres"} 
+  } 
+}

@@ -18,7 +18,8 @@
 
 html {
   font-family: "PT Sans";
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #006;
   font-size: 16px;
 }
@@ -27,6 +28,7 @@ html {
 .full-text {
   display: none;
 }
+
 @media (min-width: 1200px) {
   .full-text {
     display: inline-block;
@@ -36,6 +38,7 @@ html {
 .short-text {
   display: inline-block;
 }
+
 @media (min-width: 1200px) {
   .short-text {
     display: none;
@@ -44,26 +47,38 @@ html {
 
 /* GRID SIZING AND ITEM PLACEMENT */
 .gridcontainer {
+  display: -ms-grid;
   display: grid;
   margin: 0 auto;
   gap: 0.4em;
-  grid-template-columns: 0.05fr 2fr 0.05fr;
-  grid-template-areas: ". hdr . " ". shdr . " ". n2kt . " ". tcon . " ". map1 . " ". map2 . " ". map3 . " ". ftr . ";
+  -ms-grid-columns: 0.05fr 2fr 0.05fr;
+      grid-template-columns: 0.05fr 2fr 0.05fr;
+      grid-template-areas: ". hdr . " ". shdr . " ". n2kt . " ". tcon . " ". map1 . " ". map2 . " ". map3 . " ". ftr . ";
 }
+
 @media (min-width: 1200px) {
   .gridcontainer {
-    column-gap: 1em;
-    grid-template-columns: 0.3fr 2.5fr 2fr 2fr 0.3fr;
-    grid-template-areas: ". hdr hdr hdr . " ". shdr shdr shdr . " ". n2kt n2kt . . " ". tcon map1 map1 . " ". tcon map2 map2 . " ". tcon map3 map3 . " ". ftr ftr ftr . ";
+    -webkit-column-gap: 1em;
+            column-gap: 1em;
+    -ms-grid-columns: 0.3fr 2.5fr 2fr 2fr 0.3fr;
+        grid-template-columns: 0.3fr 2.5fr 2fr 2fr 0.3fr;
+        grid-template-areas: ". hdr hdr hdr . " ". shdr shdr shdr . " ". n2kt n2kt . . " ". tcon map1 map1 . " ". tcon map2 map2 . " ". tcon map3 map3 . " ". ftr ftr ftr . ";
   }
 }
 
 .dropdown {
   grid-area: dd;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
+
 .dropdown #n2k-dd {
   background-color: white;
   color: #000066;
@@ -88,16 +103,20 @@ p {
 }
 
 .header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
   grid-area: hdr;
   vertical-align: middle;
   padding-bottom: 0.4em;
 }
+
 .header .header__title {
   margin: 0.6em 0.4em;
   display: inline-block;
   padding: 0.2em 1.5em;
   padding-right: 0.2em;
 }
+
 .header .header__logoicon {
   margin-top: 0.2em;
   vertical-align: middle;
@@ -106,6 +125,7 @@ p {
   padding-right: 2em;
   border-right: 1px solid lightgrey;
 }
+
 .header .header__infoicon {
   height: 20px;
   margin: 0.4em;
@@ -116,26 +136,34 @@ p {
 
 .subheader {
   text-align: center;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: shdr;
   padding: 2em 0em;
 }
 
 .n2ktitle {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
   grid-area: n2kt;
   padding-top: 0px;
   padding-bottom: 0px;
   border-bottom: 1px solid lightgrey;
 }
+
 .n2ktitle h1 {
   font-weight: 500;
   font-size: var(--step-up-4);
 }
 
 .topcontent {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
   grid-area: tcon;
   padding-top: 0px;
   padding-bottom: 0px;
 }
+
 .topcontent .topcontent__status {
   font-type: inherit;
   font-size: var(--step-down-2);
@@ -149,19 +177,26 @@ p {
 .mapdiv h3 {
   font-size: var(--step-up-1);
 }
+
 map {
   height: 30em;
 }
 
 #mapcontainer1 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
   grid-area: map1;
 }
 
 #mapcontainer2 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
   grid-area: map2;
 }
 
 #mapcontainer3 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 2;
   grid-area: map3;
 }
 
@@ -170,6 +205,8 @@ map {
 }
 
 footer {
+  -ms-grid-row: 8;
+  -ms-grid-column: 2;
   grid-area: ftr;
 }
 
@@ -227,5 +264,4 @@ table.minimalistBlack tbody td {
 table.minimalistBlack tr:nth-child(even) {
   background: #FFFFFF;
 }
-
 /*# sourceMappingURL=main.css.map */
