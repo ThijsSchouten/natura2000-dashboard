@@ -20,18 +20,10 @@ require([
   /************************************************************
    * Genereer dropdown menu met alle PZH-N2k gebieden
    ************************************************************/
-  const pzh_n2k = ['Biesbosch', 'Boezems Kinderdijk',
-    'Broekvelden, Vettenbroek & Polder Stein', 'Coepelduynen',
-    'De Wilck', 'Donkse Laagten',
-    'Duinen Goeree & Kwade Hoek', 'Grevelingen', 'Haringvliet',
-    'Hollands Diep', 'Kennemerland-Zuid', 'Krammer-Volkerak',
-    'Lingegebied & Diefdijk-Zuid', 'Meijendel & Berkheide',
-    'Nieuwkoopse Plassen & De Haeck', 'Oude Maas',
-    'Oudeland van Strijen',
-    'Solleveld & Kapittelduinen', 'Voordelta', 'Voornes Duin'
-  ]
 
-  const dropdown = document.getElementById('n2k-dd')
+  const HTDropdownDiv = document.getElementById('ht-dd')
+  popDropDown(HTDropdownDiv, htdict['*'])
+  const n2kDropdownDiv = document.getElementById('n2k-dd')
 
   // Populate de dropdown
   pzh_n2k.forEach(function(info) {
@@ -39,14 +31,26 @@ require([
     option.value = "NAAM_N2k = '" + info + "'"
     let n2k = document.createTextNode(info);
     option.append(n2k)
-    dropdown.appendChild(option)
+    n2kDropdownDiv.appendChild(option)
   });
 
-  // Voeg eventlistener toe 
-  dropdown.addEventListener('change', function(event) {
-    setFeatureLayerViewFilter(natura2000, event.target.value);
-    zoomToFeature(natura2000, event.target.value, view);
+  // Voeg eventlisteners toe 
+  // Als een natura2000 gebied wordt gekozen, verander dan de filter,
+  // zoom naar de layer, en populate de dropdown met de aanwezig HT/LG
+  n2kDropdownDiv.addEventListener('change', function(event) {
+    let val = event.target.value
+    let txt = event.target.options[n2kDropdownDiv.selectedIndex].text
+    setFeatureLayerViewFilter(natura2000, val);
+    zoomToFeature(natura2000, val, view);
+    popDropDown(HTDropdownDiv, htdict[txt])
   });
+  
+  HTDropdownDiv.addEventListener('change', function(event) {
+    console.log(event.target.value)
+    setFeatureLayerViewFilter(htkaart, event.target.value);
+  })  
+  
+  
 
   /************************************************************
    * Setup de kaartjes
@@ -104,13 +108,19 @@ require([
     });
     thisview.ui.add(fullscreen, "bottom-left")
 
-    // Layer lijst
+    /* Layer lijst
     var layerList = new LayerList({
       view: thisview
     });
     thisview.ui.add(layerList, "top-right");
+    */
   })
+  
+    view.ui.add(HTDropdownDiv, {
+    position: "top-right"
+  });
 
+    
 
 
 
@@ -123,7 +133,7 @@ require([
     outfields: ["*"],
     popupTemplate: {
       title: "{n2k_naam}",
-      content: "Test"
+      content: "Habitattype: {habitattype}<br/>Kwaliteit: {kwaliteit}"
     }
   });
 
@@ -132,7 +142,7 @@ require([
     outfields: ["*"],
     popupTemplate: {
       title: "{n2k_naam}",
-      content: "Test"
+      content: "Leefgebied: {habitattype}<br/>Kwaliteit: {kwaliteit}"
     }
   });
 
@@ -146,9 +156,21 @@ require([
   });
 
   // Voeg featurelayer toe aan kaart
-  map1.add(natura2000);
+  map1.add(htkaart);
   map2.add(lgkaart);
-  map3.add(htkaart);
+  map3.add(natura2000);
+  
+  uniqueValues({
+    layer: htkaart,
+    field: "habitattype"
+  }).then(function(response){
+    // prints each unique value and the count of features containing that value
+    var infos = response.uniqueValueInfos;
+    infos.forEach(function(info){
+      console.log(info.value)
+      console.log("CANDIDATE: ", info.value, " # OF CAMPAIGN STOPS: ", info.count);
+    });    
+  })
 
 
 
@@ -164,13 +186,17 @@ require([
 
       console.log(response.features[0].geometry)
       view.goTo(response.features[0].geometry)
-      //view2.goTo(response.features[0].geometry)
-      //view3.goTo(response.features[0].geometry)
     })
   }
 
-  function setFeatureLayerViewFilter(featurelayer, expression) {
-    view.whenLayerView(featurelayer)
+  function setFeatureLayerViewFilter(featureLayer, expression) {
+    view.whenLayerView(featureLayer).then(function(featureLayerView) {
+          featureLayerView.filter = {
+            where: expression
+          };
+        });
+    
+    /*view.whenLayerView(featurelayer)
       .then((layerView) => {
         layerView.effect = {
           filter: {
@@ -178,8 +204,32 @@ require([
           },
           excludedEffect: "opacity(20%)"
         }
-      })
+      })*/
   };
+  
+  function popDropDown(element, items) {  
+    // Leeg de Div eerst.
+    while (element.firstChild) {
+      element.removeChild(element.firstChild);
+    }
+    
+    let option = document.createElement('option')
+    option.value = "1 = 1";
+    option.append(document.createTextNode('Alle habitattypen'))
+    element.appendChild(option)
+    
+    // 'Populate 
+    items.forEach(function(item) {
+      let option = document.createElement('option')
+      option.value = "habitattype = '" + item + "'";
+      option.append(document.createTextNode(item))
+      element.appendChild(option)
+    });
+    
+    
+    
+  }
+  
 
   /************************************************************
    * utility method that synchronizes the viewpoint of a view to other views
@@ -287,29 +337,3 @@ require([
 
 
 })
-
-/************************************************************
- * Create DataTable instance
- ************************************************************/
-$(document).ready(function() {
-  var table = $('#n2k_table_placeholder').DataTable({
-    "ajax": 'data/data.json',
-    "scrollX": true,
-    "scrollY": "300px",
-    "scrollCollapse": true,
-    "paging": false
-  });
-  
-  $(window).resize(function() {
-    var width = $('#mapcontainer1').width();
-    if($(window).width() > 1200){        
-        $("map").height(width);
-    } else {
-        $("map").height(width*0.55);
-    }
-  })
-    
-  
-});
-
-

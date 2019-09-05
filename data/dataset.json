@@ -1,0 +1,81 @@
+let natura2000 = {"Nieuwkoopse Plassen & De Haeck": 
+          {
+          "_id":                          12981298,
+          "nummer":                       103,
+          "bijgewerkt":                   "2012-04-23T18:25:43.511Z",
+          "status":                       "Inspraak periode is afgelopen",
+          "actueel":                      "",
+          "ministerie":                   "link",
+          "habitatkaart":                 [
+                                            {"titel": "name",
+                                             "url": "www",
+                                             "datum": "datum",
+                                             "status": "status",
+                                             "toelichting": "Toelichting",
+                                             "unieke typen": ['H0000', 'H6410', 'H7140A', 'H3150baz', 'H4010B', 'H91D0', 'H7140B', 'H3140lv', 'H6430A', 'H7210', 'H6430B'],
+                                             "id": "103_HT_T0"}
+                                          ],
+          "leefgebieden":                 [
+                                            {"titel": "name",
+                                             "url": "www",
+                                             "datum": "datum",
+                                             "status": "status",
+                                             "toelichting": "Toelichting",
+                                             "unieke typen": ['LGX', 'LGY'],
+                                             "id": "103_LG_T0"}
+                                          ],
+          "soorten":                      [
+                                            {"naam": "Woelmuis",
+                                             "leefgebied": ["LGX", "LGY"]}
+                                          ],
+          "aanwijzing vogelrichtlijn":    {"url": "www",
+                                           "datum": "datum"},
+          "aanwijzing habitatrichtlijn":  {"url": "www",
+                                           "datum": "datum"},
+          "beheerplan":                   [
+                                            {"titel": "name",
+                                             "url": "www",
+                                             "datum": "datum",
+                                             "status": "status",
+                                             "toelichting": "Toelichting"}
+                                          ],
+          "aanwijzingsbesluit":           [
+                                            {"titel": "name",
+                                             "url": "www",
+                                             "datum": "datum",
+                                             "status": "status",
+                                             "toelichting": "Toelichting"}
+                                          ],
+          "wijzigingsbesluit":            [
+                                            {"titel": "name",
+                                             "url": "www",
+                                             "datum": "datum",
+                                             "status": "status",
+                                             "toelichting": "Toelichting"}
+                                          ],
+          "vergunningen":                 [
+                                            {"titel": "name",
+                                             "url": "www",
+                                             "datum": "datum",
+                                             "status": "status",
+                                             "toelichting": "Toelichting"}
+                                          ],
+          "maatregelen":                  [
+                                            {"titel": "name",
+                                             "url": "www",
+                                             "datum": "datum",
+                                             "status": "status",
+                                             "toelichting": "Toelichting"}
+                                          ],
+          "overig onderzoek":             [
+                                            {"titel": "name",
+                                             "url": "www",
+                                             "datum": "datum",
+                                             "status": "status",
+                                             "toelichting": "Toelichting",
+                                             "opdrachtgever": "Opdrachtgever"}
+                                          ],
+          "contact":                      {"naam": "naam",
+                                           "contact": "mailadres"} 
+          } 
+}

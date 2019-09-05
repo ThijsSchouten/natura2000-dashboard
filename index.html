@@ -16,8 +16,9 @@
     <script type="text/javascript" src="js/vendor/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="js/vendor/jquery.dataTables.min.js"></script>
 
-    <script src="https://js.arcgis.com/4.12/"></script>
-    <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://js.arcgis.com/4.12/"></script>
+    <script type="text/javascript" src="data/data.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 
 </head>
 
@@ -32,23 +33,84 @@
 
       </header>
       
+      <div class="griditem subheader">
+        <h3> Natura 2000 in de Provincie Zuid-Holland</h3>
+        <p>Op deze pagina vind u de meest recente informatie met betrekking tot de Zuid-Hollandse Natura-2000 gebieden. Selecteer een natuurgebied om </p>
         <div class="dropdown">
             <select class="dropdown-content" id='n2k-dd'>
-                <option value="" selected disabled hidden>Selecteer gebied</option>
+                <option value="" selected disabled hidden>Selecteer Natura-2000 gebied</option>
             </select>
         </div>
-        <!--          <div class="griditem subheader"></div>-->
+        
+      </div>
+      <div class="griditem n2ktitle">
+        <h1>Nieuwkoopse Plassen</h1>
+        <div class="time updatedate"><p>Deze pagina is ge-update op: 09/04/2019</p></div>
+        
+        
+      </div>
 
         <div class="griditem topcontent">
-            <h2>Nieuwkoopse Plassen</h2>
-            <div class="topcontent__status">Inspraak periode is afgelopen</div>
+          
             <h3>Actueel</h3>
-            <p>
-                Basis gegevens zijn te vinden op de site van het ministerie van Landbouw Natuur en Voedselkwaliteit. Zie onderstaande link.
-            </p>
-            <p>
-                <a href='https://www.synbiosys.alterra.nl/natura2000/gebiedendatabase.aspx?subj=n2k&groep=9&id=n2k103' class='external-link'>Basisgegevens LNV </a>
-            </p>
+            <div class="topcontent__status">STATUS: Inspraak periode is afgelopen</div>
+            <p>Hier komt een verhaal over het natuurgebied, de huidige status etc.</p>
+            
+            
+            <h3>Basis informatie</h3>
+            <p>Basis gegevens zijn te vinden op de site van het ministerie van Landbouw Natuur en Voedselkwaliteit. Zie onderstaande link.</p>
+            <p><a href='https://www.synbiosys.alterra.nl/natura2000/gebiedendatabase.aspx?subj=n2k&groep=9&id=n2k103' class='external-link'>Basisgegevens LNV</a></p>
+            <table class='minimalistBlack'>
+              <tr>
+                <td>
+                  Aanwijzing Vogelrichtlijn
+                </td>
+                <td>
+                  14 feb 1997
+                </td>          
+              </tr>
+              <tr>
+                <td>
+                  Plaatsing europese lijst Habitatrichtlijn
+                </td>
+                <td>
+                  7 feb 2004
+                </td>          
+              </tr>
+              <tr>
+                <td>
+                  Definitief besluit
+                </td>
+                <td>
+                  25 november 2013
+                </td>          
+              </tr>
+              <tr>
+                <td>
+                  Wijzigingsbesluit
+                </td>
+                <td>
+                  --
+                </td>          
+              </tr>
+              <tr>
+                <td>
+                  Natuur monumentdeel Beschermd/staats
+                </td>
+                <td>
+                  --
+                </td>          
+              </tr>
+              <tr>
+                <td>
+                  Beheerplan
+                </td>
+                <td>
+                  Ontwerp
+                </td>          
+              </tr>
+              
+            </table>
             <h3>Aanwijzingsbesluit</h3>
             <p>
                 <a href='https://www.synbiosys.alterra.nl/natura2000/documenten/gebieden/103/N2K103_DB%20HVN%20Nieuwkoopse%20Plassen%20&%20De%20Haeck.pdf' class='doc-link'> Besluit natura-2000 gebied Nieuwkoopse Plassen en De Heack [06-01-2014]</a>
@@ -64,6 +126,14 @@
                 <br>
                 <a href='https://geo.zuid-holland.nl/Data/Natura_2000/Natura2000_Beheerplannen/notavanbeantwoordingenwijzigingbeheerplan2015-2021natura2000-gebiednieuwkoopseplassenendehaeck.pdf' class='doc-link'>Nota van Antwoord</a>
             </p>
+          
+        <h3>Vergunningen</h3>
+        <p>[doclink] Onderzoek naar ..</p>
+        <h3>Overig onderzoek / Links</h3>
+        <p>[doclink] Onderzoek naar ..</p>
+        <h3>Contact</h3>
+        <p>Meer informatie kan worden opgevraagd via natura2000@pzh.nl</p>
+          
         </div>
 
         <div class="griditem mapdiv" id="mapcontainer1">
@@ -71,38 +141,21 @@
             <map id="htkaart" name='htkaart'></map>
         </div>
         <div class="griditem mapdiv" id="mapcontainer2">
-            <h3>Soortenkaart</h3>
+            <h3>Relevante Leefgebieden</h3>
             <map id="lgkaart_nox" name='lgkaart_nox'></map>
         </div>
         <div class="griditem mapdiv" id="mapcontainer3">
             <h3>Leefgebieden</h3>
             <map id="lgkaart_all" name='lgkaart_all'></map>
         </div>
-
-        <div class="griditem n2k_table">
-            <h3>Data tabel</h3>
-            <table id="n2k_table_placeholder">
-                <thead>
-                    <tr>
-                        <th>Habitattype</th>
-                        <th>Richtlijn</th>
-                        <th>AWB</th>
-                        <th>VB</th>
-                        <th>NOx</th>
-                        <th>KDW</th>
-                        <th>Doelstelling</th>
-                    </tr>
-                </thead>
-            </table>
-        </div>
         <div class="griditem aftermapcontent">
-            <h3>Vergunningen</h3>
-            <p>[doclink] Onderzoek naar ..</p>
-            <h3>Overig onderzoek / Links</h3>
-            <p>[doclink] Onderzoek naar ..</p>
+            
 
         </div>
-        <footer class="griditem">Footer</footer>
+        <select id="ht-dd">
+          <option value="" selected disabled hidden>Selecteer HT</option>
+        </select>
+        <footer class="griditem">Ontwikkeling: Thijs Schouten. Contact: link </footer>
     </div>
 </body>
 

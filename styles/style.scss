@@ -37,7 +37,7 @@ html {
   font-family: $font-base;
   box-sizing: border-box;
   color: #006;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* CHANGING TEXT WITH MEDIA QUERY 8 */
@@ -59,57 +59,43 @@ html {
   display: grid;
   margin: 0 auto;
   gap: 0.4em;
-  grid-template-columns: 0.005fr 2fr 2fr 2fr 0.005fr;
+  grid-template-columns: 0.05fr 2fr 0.05fr;
   grid-template-areas: 
-    ". hdr hdr hdr . "
-    ". dd dd dd ."
-    ". tcon tcon tcon . "
-    ". map1 map1 map1 . "
-    ". map2 map2 map2 ."
-    ". map3 map3 map3 ."
-    ". n2kt n2kt n2kt ."
-    ". bcon bcon bcon ."
-    ". ftr ftr ftr . ";
-  .griditem { min-height: 3em; }
+    ". hdr . "
+    ". shdr . "
+    ". n2kt . "
+    ". tcon . "
+    ". map1 . "
+    ". map2 . "
+    ". map3 . "
+    ". ftr . ";
   
   @media (min-width: $mediaquery-cutoff2) { 
-    grid-template-columns: 0.3fr 2fr 2fr 2fr 0.3fr;
+    column-gap: 1em;
+    grid-template-columns: 0.3fr 2.5fr 2fr 2fr 0.3fr;
     grid-template-areas: 
-      ". hdr hdr dd . "
-      ". tcon tcon tcon . "
-      ". map1 map2 map3 . "
-      ". n2kt n2kt n2kt . "
-      ". bcon bcon bcon ."
-      ". ftr ftr ftr .";
+      ". hdr hdr hdr . "
+      ". shdr shdr shdr . "
+      ". n2kt n2kt . . "
+      ". tcon map1 map1 . "
+      ". tcon map2 map2 . "
+      ". tcon map3 map3 . "
+      ". ftr ftr ftr . ";
   }
 }
 
 .dropdown {
   grid-area: dd;
-  background-color: $pzhblue;
+  //background-color: $pzhblue;
   align-items: center;
   display: inline-flex;
   justify-content: flex-end;
   
   #n2k-dd {
-    color: white;
-    background-color: $pzhblue;
-    display: border-box;
-    width: 100%;
-    padding: 0.2em;
-    border-color: $pzhblue;
-  }
-  
-  @media (min-width: $mediaquery-cutoff2) { 
-    grid-area: dd;
     background-color: white;
-    
-    #n2k-dd {
-      background-color: white;
-      color: $pzhblue;
-      padding: 0.4em;
-      border-radius: 8px;
-    }
+    color: $pzhblue;
+    padding: 0.4em;
+    border-radius: 8px;
   }
 }
 
@@ -123,6 +109,7 @@ h3 {
     //text-transform: uppercase;
     font-size: var(--step-up-1);
     font-weight: 500;
+    padding-top: 1em;
 }
 
 p {
@@ -160,10 +147,21 @@ p {
 }
 
 .subheader {
+    text-align: center;
     grid-area: shdr;
+    padding:2em 0em;
+}
+
+.n2ktitle {
+    grid-area: n2kt;
     padding-top: 0px;
     padding-bottom: 0px;
-    background-color: #033b9a;
+  border-bottom: 1px solid lightgrey;
+  
+  h1 {
+    font-weight: 500;
+    font-size: var(--step-up-4);
+  }
 }
 
 .topcontent {
@@ -183,15 +181,15 @@ p {
 }
 
 .mapdiv {
-    background-color: whitesmoke;
-    text-align: center;
-    h1 {
+    h3 {
         font-size: var(--step-up-1);
+    }
+     @media (min-width: $mediaquery-cutoff2) { 
     }
 }
 
 map {
-    height: 25em;
+    height: 30em;
 }
 
 #mapcontainer1 {
@@ -202,23 +200,6 @@ map {
 }
 #mapcontainer3 {
     grid-area: map3;
-}
-.n2k_table {
-  display: none;
-  font-size: 16px;
-  grid-area: n2kt;
-  
-  thead {
-    font-family: "Source Sans Pro";
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-  tr {
-    font-family: "Source Sans Pro";
-    font-weight: 200;
-    font-size: var(--step-down-1);
-    text-align: left;
-  }
 }
 
 .aftermapcontent {
@@ -232,6 +213,7 @@ footer {
 a {
   color: $pzhblue;
   text-decoration: none;
+  //line-height: 1em;
 }
 
 a:hover {
@@ -244,10 +226,10 @@ a:hover {
     content: "";
     display: block;
     background: url("../logo/file.svg") no-repeat;
-    background-size: 12px 12px;
+    background-size: 1em 1em;
     background-position: center;
-    width: 16px;
-    height: 16px;
+    width: 1em;
+    height: 1em;
     float: left;
     margin: 0 6px 0 0;
 }
@@ -255,10 +237,28 @@ a:hover {
     content: "";
     display: block;
     background: url("../logo/exlink.svg") no-repeat;
-    background-size: 10px 10px;
+    background-size: 1em 1em;
     background-position: center;
-    width: 16px;
-    height: 16px;
+    width: 1em;
+    height: 1em;
     float: left;
     margin: 0 6px 0 0;
+}
+
+/* TABLE STYLING */
+table.minimalistBlack {
+  border: 0px solid #000000;
+  background-color: #F7F7F7;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.minimalistBlack td{
+  padding: 5px 3px;
+}
+table.minimalistBlack tbody td {
+  font-size: var(--step-down-1);
+}
+table.minimalistBlack tr:nth-child(even) {
+  background: #FFFFFF;
 }
