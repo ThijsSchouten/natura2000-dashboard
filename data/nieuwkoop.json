@@ -1,4 +1,4 @@
-let natura2000 = {"Nieuwkoopse Plassen & De Haeck": 
+let n2k = {"Nieuwkoopse Plassen & De Haeck": 
   {
   "_id":                          103,
   "name":                         "Nieuwkoopse Plassen & De Haeck",
