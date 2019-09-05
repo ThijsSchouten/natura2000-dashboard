@@ -1,107 +1,149 @@
-let n2k = {"Nieuwkoopse Plassen & De Haeck": 
-  {
-  "_id":                          103,
-  "name":                         "Nieuwkoopse Plassen & De Haeck",
-  "bijgewerkt":                   "2019-09-05",
-  "status":                       "Inspraak periode is afgelopen",
-  "actueel":                      "Hier komt een tekst waarin staat wat actueel is.",
-  "ministerie":                   "https://www.synbiosys.alterra.nl/natura2000/gebiedendatabase.aspx?subj=n2k&groep=9&id=n2k103",
-  "beheerplan":                   [
-                                    {
-                                    "titel": "Beheerplan T0",
-                                    "url": "www",
-                                    "datum": "datum",
-                                    "bron": "Provincie Zuid-Holland",
-                                    "status": "vigerend",
-                                    "toelichting": "Toelichting",
-                                    "evaluatie": {"titel": "Evaluatie beheerplan T0",
-                                                  "url": "pad/naar/bestand"}
-                                    }
-                                  ],                        
-  "maatregelen":                  [
-                                    {"titel": "name",
-                                     "url": "www",
-                                     "service_url": "..",
-                                     "datum": "datum",
-                                     "status": "status",
-                                     "toelichting": "Toelichting"}
-                                  ],                                
-  "habitatkaart":                 [
-                                    {"titel": "T0",
-                                     "url": "url/naar/bron",
-                                     "service_url": "url/naar/service",
-                                     "bestand": "N2K_HK_103_Nieuwkoop_en_de_haeck_v20130624",
-                                     "bestand_toelichting": "130526_Toelichting_Habitatkaart_103_Nieuwkoopse_plassen__De_Haeck_v_1-4b.docx",
-                                     "datum": "2013-06-24",
-                                     "bron": "",
-                                     "status": "",
-                                     "toelichting": "Toelichting",
-                                     "unieke typen": ["H0000", "H6410", "H7140A", "H3150baz", "H4010B", "H91D0", "H7140B", "H3140lv", "H6430A", "H7210", "H6430B"],
-                                     "id": "103_HT_T0"}
-                                  ],
-  "leefgebieden":                 [
-                                    {"titel": "--",
-                                     "service_url": "--",
-                                     "url": "--",
-                                     "bestand": "",
-                                     "bestand_toelichting": "",
-                                     "datum": "--",
-                                     "bron": "",
-                                     "status": "",
-                                     "toelichting": "-",
-                                     "unieke typen": ["--", "--"],
-                                     "id": "103_LG_T0"}
-                                  ],
-  "leefgebied":                 [
-                                    {"titel": "T0: (N) Relevant Leefgebied",
-                                     "service_url": "url/naar/service",
-                                     "url": "url/naar/bron",
-                                     "bestand": "N2K_LG_103_Nieuwkoopse_plassen_en_de_Haeck_20171003",
-                                     "bestand_toelichting": "",
-                                     "datum": "2017-10-03",
-                                     "bron": "",
-                                     "status": "",
-                                     "toelichting": "Toelichting",
-                                     "unieke typen": ["LGX", "LGY"],
-                                     "id": "103_LG_T0"}
-                                  ],
-  "vogelrichtlijn":    {"aanwijzing_datum": "1997-02-14", "url": "www"},
-  "habitatrichtlijn":  {"aanwijzing_datum": "7 feb 2004", "url": "www", "plaatsing_datum": "2004-02-07"},
-  
-  "aanwijzingsbesluit":           [
-                                    {"titel": "name",
-                                     "url": "www",
-                                     "datum": "datum",
-                                     "bron": "",
-                                     "status": "status",
-                                     "toelichting": "Toelichting"}
-                                  ],
-  "wijzigingsbesluit":            [
-                                    {"titel": "name",
-                                     "url": "www",
-                                     "datum": "datum",
-                                     "bron": "",
-                                     "status": "status",
-                                     "toelichting": "Toelichting"}
-                                  ],
-  "vergunningen":                 [
-                                    {"titel": "name",
-                                     "url": "www",
-                                     "datum": "datum",
-                                     "bron": "",
-                                     "status": "status",
-                                     "toelichting": "Toelichting"}
-                                  ],
-  "overig onderzoek":             [
-                                    {"titel": "name",
-                                     "url": "www",
-                                     "datum": "datum",
-                                     "bron": "",
-                                     "status": "status",
-                                     "toelichting": "Toelichting",
-                                     "opdrachtgever": "Opdrachtgever"}
-                                  ],
-  "contact":                      {"naam": "naam",
-                                   "contact": "mailadres"} 
-  } 
-}
+{
+   "_id": 103,
+   "name": "Nieuwkoopse Plassen & De Haeck",
+   "bijgewerkt": "2019-09-05",
+   "status": "Inspraak periode is afgelopen",
+   "actueel": "Hier komt een tekst waarin staat wat actueel is.",
+   "ministerie": "https://www.synbiosys.alterra.nl/natura2000/gebiedendatabase.aspx?subj=n2k&groep=9&id=n2k103",
+   "beheerplan": [
+     {
+       "titel": "Beheerplan T0",
+       "url": "www",
+       "datum": "datum",
+       "bron": "Provincie Zuid-Holland",
+       "status": "vigerend",
+       "toelichting": "Toelichting",
+       "evaluatie": {
+         "titel": "Evaluatie beheerplan T0",
+         "url": "pad/naar/bestand"
+       }
+     }
+   ],
+   "maatregelen": [
+     {
+       "titel": "name",
+       "url": "www",
+       "service_url": "..",
+       "datum": "datum",
+       "status": "status",
+       "toelichting": "Toelichting"
+     }
+   ],
+   "habitatkaart": [
+     {
+       "titel": "T0",
+       "url": "url/naar/bron",
+       "service_url": "url/naar/service",
+       "bestand": "N2K_HK_103_Nieuwkoop_en_de_haeck_v20130624",
+       "bestand_toelichting": "130526_Toelichting_Habitatkaart_103_Nieuwkoopse_plassen__De_Haeck_v_1-4b.docx",
+       "datum": "2013-06-24",
+       "bron": "",
+       "status": "",
+       "toelichting": "Toelichting",
+       "unieke typen": [
+         "H0000",
+         "H6410",
+         "H7140A",
+         "H3150baz",
+         "H4010B",
+         "H91D0",
+         "H7140B",
+         "H3140lv",
+         "H6430A",
+         "H7210",
+         "H6430B"
+       ],
+       "id": "103_HT_T0"
+     }
+   ],
+   "leefgebieden": [
+     {
+       "titel": "--",
+       "service_url": "--",
+       "url": "--",
+       "bestand": "",
+       "bestand_toelichting": "",
+       "datum": "--",
+       "bron": "",
+       "status": "",
+       "toelichting": "-",
+       "unieke typen": [
+         "--",
+         "--"
+       ],
+       "id": "103_LG_T0"
+     }
+   ],
+   "leefgebied": [
+     {
+       "titel": "T0: (N) Relevant Leefgebied",
+       "service_url": "url/naar/service",
+       "url": "url/naar/bron",
+       "bestand": "N2K_LG_103_Nieuwkoopse_plassen_en_de_Haeck_20171003",
+       "bestand_toelichting": "",
+       "datum": "2017-10-03",
+       "bron": "",
+       "status": "",
+       "toelichting": "Toelichting",
+       "unieke typen": [
+         "LGX",
+         "LGY"
+       ],
+       "id": "103_LG_T0"
+     }
+   ],
+   "vogelrichtlijn": {
+     "aanwijzing_datum": "1997-02-14",
+     "url": "www"
+   },
+   "habitatrichtlijn": {
+     "aanwijzing_datum": "2013-11-25",
+     "url": "www",
+     "plaatsing_datum": "2004-02-07"
+   },
+   "aanwijzingsbesluit": [
+     {
+       "titel": "name",
+       "url": "www",
+       "datum": "datum",
+       "bron": "",
+       "status": "status",
+       "toelichting": "Toelichting"
+     }
+   ],
+   "wijzigingsbesluit": [
+     {
+       "titel": "name",
+       "url": "www",
+       "datum": "datum",
+       "bron": "",
+       "status": "status",
+       "toelichting": "Toelichting"
+     }
+   ],
+   "vergunningen": [
+     {
+       "titel": "name",
+       "url": "www",
+       "datum": "datum",
+       "bron": "",
+       "status": "status",
+       "toelichting": "Toelichting"
+     }
+   ],
+   "overig onderzoek": [
+     {
+       "titel": "name",
+       "url": "www",
+       "datum": "datum",
+       "bron": "",
+       "status": "status",
+       "toelichting": "Toelichting",
+       "opdrachtgever": "Opdrachtgever"
+     }
+   ],
+   "contact": {
+     "naam": "naam",
+     "contact": "mailadres"
+   }
+ }
