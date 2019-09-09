@@ -1,0 +1,204 @@
+{
+  "Biesbosch": {
+    "aanwijzingsbesluit": [
+      {
+        "bron": "-",
+        "datum": "-",
+        "status": "-",
+        "titel": "-",
+        "toelichting": "-",
+        "url": "-"
+      }
+    ],
+    "beheerplan": [
+      {
+        "bron": "Provincie Zuid-Holland",
+        "datum": "datum",
+        "download": "www",
+        "status": "vigerend",
+        "titel": "Beheerplan T0",
+        "toelichting": "toelichting"
+      },
+      {
+        "bron": "Provincie Zuid-Holland",
+        "datum": "datum",
+        "download": "www",
+        "status": "vigerend",
+        "titel": "Beheerplan T0",
+        "toelichting": "toelichting"
+      }
+    ],
+    "bijgewerkt": "hoi",
+    "contact": [
+      {
+        "adres": "-",
+        "naam": "-"
+      }
+    ],
+    "evaluatie": [
+      {
+        "titel": "-",
+        "url": "-"
+      }
+    ],
+    "habitatrichtlijn": [
+      {
+        "aanwijzing_datum": "-",
+        "plaatsing_datum": "-",
+        "url": "-"
+      }
+    ],
+    "id": 55,
+    "maatregelen": [
+      {
+        "beheerplan": "Beheerplan T0",
+        "bron": "Provincie Zuid-Holland",
+        "datum": "-",
+        "download": "link naar het bestand",
+        "status": "-",
+        "titel": "-",
+        "toelichting": "-"
+      }
+    ],
+    "naam": "Biesbosch",
+    "rapport": [
+      {
+        "bron": "-",
+        "datum": "-",
+        "opdrachtgever": "-",
+        "titel": "-",
+        "toelichting": "-",
+        "url": "-"
+      }
+    ],
+    "status": "inspraak periode is afgelopen",
+    "synbiosys ": "https://www.synbiosys.alterra.nl/natura2000/gebiedendatabase.aspx?subj=n2k&groep=9&id=n2k103",
+    "toelichting": "Hier mag in een inleidende tekst met de actuele status",
+    "vergunning": [
+      {
+        "bron": "-",
+        "datum": "-",
+        "titel": "-",
+        "toelichting": "-",
+        "url": "-"
+      }
+    ],
+    "vogelrichtlijn": [
+      {
+        "aanwijzing datum": "-",
+        "url": "-"
+      }
+    ],
+    "wijzigingsbesluit": [
+      {
+        "bron": "-",
+        "datum": "-",
+        "status": "-",
+        "titel": "-",
+        "toelichting": "-",
+        "url": "-"
+      }
+    ]
+  },
+  "Nieuwkoopse Plassen & De Heack": {
+    "aanwijzingsbesluit": [
+      {
+        "bron": "-",
+        "datum": "-",
+        "status": "-",
+        "titel": "-",
+        "toelichting": "-",
+        "url": "-"
+      }
+    ],
+    "beheerplan": [
+      {
+        "bron": "Provincie Zuid-Holland",
+        "datum": "datum",
+        "download": "www",
+        "status": "vigerend",
+        "titel": "Beheerplan T0",
+        "toelichting": "toelichting"
+      },
+      {
+        "bron": "Provincie Zuid-Holland",
+        "datum": "datum",
+        "download": "www",
+        "status": "vigerend",
+        "titel": "Beheerplan T0",
+        "toelichting": "toelichting"
+      }
+    ],
+    "bijgewerkt": "hoi",
+    "contact": [
+      {
+        "adres": "-",
+        "naam": "-"
+      }
+    ],
+    "evaluatie": [
+      {
+        "titel": "-",
+        "url": "-"
+      }
+    ],
+    "habitatrichtlijn": [
+      {
+        "aanwijzing_datum": "-",
+        "plaatsing_datum": "-",
+        "url": "-"
+      }
+    ],
+    "id": 103,
+    "maatregelen": [
+      {
+        "beheerplan": "Beheerplan T0",
+        "bron": "Provincie Zuid-Holland",
+        "datum": "-",
+        "download": "link naar het bestand",
+        "status": "-",
+        "titel": "-",
+        "toelichting": "-"
+      }
+    ],
+    "naam": "Nieuwkoopse Plassen & De Heack",
+    "rapport": [
+      {
+        "bron": "-",
+        "datum": "-",
+        "opdrachtgever": "-",
+        "titel": "-",
+        "toelichting": "-",
+        "url": "-"
+      }
+    ],
+    "status": "inspraak periode is afgelopen",
+    "synbiosys ": "https://www.synbiosys.alterra.nl/natura2000/gebiedendatabase.aspx?subj=n2k&groep=9&id=n2k103",
+    "toelichting": "Hier mag in een inleidende tekst met de actuele status",
+    "vergunning": [
+      {
+        "bron": "-",
+        "datum": "-",
+        "titel": "-",
+        "toelichting": "-",
+        "url": "-"
+      }
+    ],
+    "vogelrichtlijn": [
+      {
+        "aanwijzing datum": "-",
+        "url": "-"
+      }
+    ],
+    "wijzigingsbesluit": [
+      {
+        "bron": "-",
+        "datum": "-",
+        "status": "-",
+        "titel": "-",
+        "toelichting": "-",
+        "url": "-"
+      }
+    ]
+  }
+}
