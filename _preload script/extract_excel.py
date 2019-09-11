@@ -21,11 +21,13 @@ def main():
 
     # Loop door de sheets heen
     for name in sheets_dict:
+        if name[0] == '_':
+            print('Pagina {} wordt niet uitgelezen'.format(name))
+            continue
         df = sheets_dict[name]
         n2k_dict[name] = extract_data(df)
 
-    #pp.pprint(n2k_dict)
-    #print(n2k_dict)
+    pp.pprint(n2k_dict)
 
     with open('n2k.json', 'wt') as file:
         file.write(json.dumps(n2k_dict, indent=2, sort_keys=True))
@@ -61,13 +63,9 @@ def extract_data(df):
         # dict toe aan de hoofd dict.
         if cat and not subcat and not val:
             # Als de key al bestaat
-            if not d.get(c):
-                d[c] = []
-            else:
-                print('{} bestaat'.format(c))
-
-            d[c].append(subd)
-            subd = {}
+            if not d.get(c) and len(subd) > 0:
+                d[c] = [subd]
+                subd = {}
 
     return d
 

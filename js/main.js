@@ -25,18 +25,17 @@ require([
   popDropDown(HTDropdownDiv, htdict['*'])
   const n2kDropdownDiv = document.getElementById('n2k-dd')
 
-
+    /*
   for (var key in test_data){
     let option = document.createElement('option');
     option.value = "NAAM_N2k = '" + key + "'"
     let n2k = document.createTextNode(key);
     option.append(n2k)
     n2kDropdownDiv.appendChild(option)
+  }*/
 
-    console.log( key)//, test_data[key] );
-  }
-
-  /* Populate de dropdown
+  
+  /* Populate de dropdown*/
   pzh_n2k.forEach(function(info) {
     let option = document.createElement('option');
     option.value = "NAAM_N2k = '" + info + "'"
@@ -44,7 +43,7 @@ require([
     option.append(n2k)
     n2kDropdownDiv.appendChild(option)
   });
-  */
+  
 
   // Voeg eventlisteners toe 
   // Als een natura2000 gebied wordt gekozen, verander dan de filter,
@@ -54,7 +53,7 @@ require([
     let txt = event.target.options[n2kDropdownDiv.selectedIndex].text
     setFeatureLayerViewFilter(natura2000, val);
     zoomToFeature(natura2000, val, view);
-    popDropDown(HTDropdownDiv, htdict[txt])
+    popDropDown(HTDropdownDiv, htdict[txt]);
   });
   
   HTDropdownDiv.addEventListener('change', function(event) {
